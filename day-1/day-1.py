@@ -4,6 +4,7 @@ Created on Thu Dec 24 02:11:58 2020
 
 @author: ufukeskici
 """
+# solution of part 1
 
 import os
 os.chdir('D:\\github\\advent-of-code-2020\\day-1')
@@ -14,8 +15,6 @@ with open('expense_report.txt', 'r') as f:
     for line in f:
         line = line.rstrip('\n')
         expenses.append(int(line))
-
-# solution of part 1
 
 for i in expenses:
     x = 2020 - i
