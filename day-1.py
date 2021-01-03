@@ -7,11 +7,11 @@ Created on Thu Dec 24 02:11:58 2020
 # solution of part 1
 
 import os
-os.chdir('D:\\github\\advent-of-code-2020\\day-1')
+os.chdir('D:\\github\\advent-of-code-2020')
 
 expenses = []
 
-with open('expense_report.txt', 'r') as f:
+with open('day-1-expense-report.txt', 'r') as f:
     for line in f:
         line = line.rstrip('\n')
         expenses.append(int(line))

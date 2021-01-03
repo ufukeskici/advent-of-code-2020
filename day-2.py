@@ -6,12 +6,12 @@ Created on Thu Dec 24 02:11:58 2020
 """
 
 import os
-os.chdir('D:\\github\\advent-of-code-2020\\day-2')
+os.chdir('D:\\github\\advent-of-code-2020')
 
 n = 0 # number of valid passwords for part 1
 m = 0 # number of valid passwords for part 2
 
-with open('password_list.txt', 'r') as f:
+with open('day-2-password-list.txt', 'r') as f:
     for line in f:
         line = line.rstrip('\n')
         line = line.split(' ')
@@ -34,7 +34,3 @@ with open('password_list.txt', 'r') as f:
             
 print(f"The answer of part one is {n}")
 print(f"The answer of part two is {m}")
-
-# 1-3 a: abcde is valid: position 1 contains a and position 3 does not.
-# 1-3 b: cdefg is invalid: neither position 1 nor position 3 contains b.
-# 2-9 c: ccccccccc is invalid: both position 2 and position 9 contain c.
